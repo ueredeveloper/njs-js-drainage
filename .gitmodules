@@ -1,0 +1,3 @@
+[submodule "public/js-drainage-submodule"]
+	path = public/js-drainage-submodule
+	url = https://github.com/ueredeveloper/js-drainage.git

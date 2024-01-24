@@ -3,10 +3,10 @@ const fs = require('fs');
 const path = require('path');
 
 const server = http.createServer((req, res) => {
-    let filePath = './public/js-drainage' + req.url;
+    let filePath = './public/js-drainage-submodule' + req.url;
 
-    if (filePath === './public/js-drainage/') {
-        filePath = './public/js-drainage/index.html';
+    if (filePath === './public/js-drainage-submodule/') {
+        filePath = './public/js-drainage-submodule/index.html';
     }
 
     const extname = String(path.extname(filePath)).toLowerCase();
@@ -43,7 +43,7 @@ const server = http.createServer((req, res) => {
     });
 });
 
-const port = 3000;
+const port = 3515;
 server.listen(port, () => {
     console.log(`Server running at http://localhost:${port}/`);
 });
